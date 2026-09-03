@@ -7,7 +7,7 @@ Acá viven los notebooks y enunciados de los laboratorios. Clónenlo una vez y h
 ```bash
 git clone <url-del-repo> taller-cd
 cd taller-cd
-pip install pandas requests jupyter
+pip install pandas numpy requests jupyter
 jupyter lab
 ```
 
@@ -15,7 +15,8 @@ jupyter lab
 
 | # | Fecha | Tema | Material |
 |---|---|---|---|
-| 2 | 13-ago | Búsqueda y recolección de datos | [enunciado](lab02-recoleccion-datos.md) · [notebook](lab02-recoleccion-datos.ipynb) · [guía](lab02-guia-recoleccion-datos.md) |
+| 2 | 13-ago | Búsqueda y recolección de datos | [enunciado](02/lab02-recoleccion-datos.md) · [notebook](02/lab02-recoleccion-datos.ipynb) · [guía](02/lab02-guia-recoleccion-datos.md) |
+| 5 | 03-sep | Integración de fuentes y creación de características | [enunciado](05/lab05-integracion-features.md) · [notebook](05/lab05-integracion-features.ipynb) · [guía](05/lab05-guia-integracion-features.md) |
 
 ## Cómo trabajar
 
