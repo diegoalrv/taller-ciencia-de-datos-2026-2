@@ -1,0 +1,11 @@
+# Taller de Ciencia de Datos — laboratorios
+# pip install -r requirements.txt
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
+matplotlib>=3.7
+jupyter
+# opcionales: los labs funcionan sin ellos y avisan en el Setup
+seaborn>=0.13
+plotly>=5.18
+streamlit>=1.30

@@ -60,6 +60,13 @@ Completen hoy **3 filas nuevas** de la bitácora de EDA (quedan 6 o más), cada 
 
 El dashboard es una herramienta de exploración opcional.
 
+**Extra (nivel 3, opcional):** [`lab08-app-streamlit.py`](lab08-app-streamlit.py) es el mismo dashboard como app de Streamlit (filtros de comuna y dependencia, tarjetas, serie, mes calendario y cambio por comuna). Necesita haber generado `data_practica/` con el notebook y un servidor local:
+
+```bash
+pip install streamlit
+streamlit run lab08-app-streamlit.py     # desde la carpeta 08/, abre localhost:8501
+```
+
 ## Checklist de salida
 
 - [ ] Ejercicios 1, 2 y 3 pasan su verificación automática (el 4 puede quedar para la casa)
