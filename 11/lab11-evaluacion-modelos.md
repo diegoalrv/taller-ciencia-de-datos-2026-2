@@ -29,8 +29,7 @@ Abran el notebook y ejecuten las celdas de *Setup* y de generación de datos. El
 | 09:50 | **Ej. 1 — Métrica y baseline** (~20 min) |
 | 10:10 | **Ej. 2 — Tres modelos, mismas particiones** (~20 min) |
 | 10:30 | **Ej. 3 — Hiperparámetros: curva y búsqueda** (~20 min; el extra 3.3 es opcional) |
-| 10:50 | Recreo |
-| 11:05 | **Ej. 4 — Caza de la filtración** (~30 min) |
+| 10:50 | **Ej. 4 — Caza de la filtración** (~30 min, con holgura hasta las 11:35) |
 | 11:35 | **Proyecto:** `04-modelado.ipynb` + tabla de auditoría + ronda de consulta docente |
 | 12:05 | Checklist de salida |
 
