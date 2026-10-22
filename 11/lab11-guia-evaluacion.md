@@ -182,8 +182,9 @@ Hay **filtración** cuando información de la validación o del test entra al en
 **La receta:** *dividir → ajustar el paso con el entrenamiento → aplicarlo a la validación*. Dentro de la validación cruzada, eso significa repetirlo **en cada fold**:
 
 ```python
-for a, b in CV.split(X_tr, y_tr):
+for a, b in CV.split(X_tr, y_tr):                                  # a = entrenamiento del fold, b = validación
     tasas = pd.Series(y_tr.values[a]).groupby(com_tr[a]).mean()     # aprende SOLO con el fold
+    Xa, Xb = X_tr.iloc[a].copy(), X_tr.iloc[b].copy()
     Xa["tasa_comercio"] = pd.Series(com_tr[a]).map(tasas).values
     Xb["tasa_comercio"] = pd.Series(com_tr[b]).map(tasas).fillna(y_tr.values[a].mean()).values
     ...
@@ -209,7 +210,7 @@ Hoy solo se usa (en `crear_modelos()`); la Clase 12 enseña a escribir `Pipeline
 
 $$u^* = \frac{C_{FP}}{C_{FP} + C_{FN}} = \frac{1}{1 + 10} \approx 0{,}09$$
 
-Avisar cuesta 1 seguro; no avisar cuesta 10 × p. Conviene avisar cuando 10·p > 1, es decir, p > 0,09.
+Si la probabilidad de retraso es p: avisar cuesta 1 solo cuando no había retraso (probabilidad 1 − p), y no avisar cuesta 10 cuando sí lo había (probabilidad p). Conviene avisar cuando 10·p > 1·(1 − p), es decir, p > 1/11 ≈ 0,09.
 
 El umbral se elige **con el entrenamiento**, con probabilidades **fuera de fold** (cada pedido predicho por un modelo que no lo vio), nunca mirando el test:
 
@@ -248,7 +249,7 @@ Y debajo, una frase y el test: *"Se elige la regresión logística: empata con e
 |---|---|---|---|
 | Bosque aleatorio | accuracy | 0,89 | el mejor |
 
-Qué le falta: la métrica no está justificada (y con clase rara, la exactitud engaña), no hay desviación ni baseline (0,89 es peor que "nunca avisar"), no se sabe si se evaluó en el test o en el entrenamiento, ni qué hiperparámetros se probaron, y "el mejor" no dice frente a qué.
+Qué le falta: la métrica no está justificada (y con clase rara, la exactitud engaña), no hay desviación ni baseline (0,89 es apenas lo que da "nunca avisar", 0,886), no se sabe si se evaluó en el test o en el entrenamiento, ni qué hiperparámetros se probaron, y "el mejor" no dice frente a qué.
 
 Cada cifra de la tabla tiene que poder rastrearse hasta la celda que la produce (trazabilidad).
 

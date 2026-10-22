@@ -40,7 +40,7 @@ Todos parten de `X_tr`, `y_tr` y `CV` (5 folds estratificados) del Setup. Si un 
 
 **1 · Métrica y baseline.** Un "modelo" que predice siempre "sin retraso" acierta el 88,6 % de los pedidos y no detecta ninguno. Con el costo declarado (no avisar un retraso cuesta 10; un aviso de más cuesta 1) se ve qué política trivial es realmente el piso, y de ahí sale la métrica.
 
-**2 · Tres modelos, mismas particiones.** Una regresión logística, un árbol y un bosque aleatorio. Primero se ve qué pasa cuando cada uno se evalúa con su propia partición (el ranking cambia de una corrida a otra). Después se comparan en los **mismos 5 folds** con media ± desviación y se decide, con la regla de la S8, si hay un ganador o un empate práctico.
+**2 · Tres modelos, mismas particiones.** Una regresión logística, un árbol y un bosque aleatorio. Primero se ve qué pasa cuando cada uno se evalúa con su propia partición (el ranking cambia de una corrida a otra). Después se comparan en los **mismos 5 folds** con media ± desviación y se decide, con la regla de la S8 de la cátedra, si hay un ganador o un empate práctico.
 
 **3 · Hiperparámetros: curva y búsqueda.** La curva de validación de la profundidad de un árbol muestra dónde está el subajuste, el buen punto y el sobreajuste. Una búsqueda aleatoria sobre el bosque responde dos preguntas: ¿mejoró algo más allá del ruido? ¿quedó algún hiperparámetro en el borde del espacio? **Extra (opcional):** elegir el umbral de probabilidad que minimiza el costo y reportar el resultado en el test, **una sola vez**.
 
