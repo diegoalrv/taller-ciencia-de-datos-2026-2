@@ -46,7 +46,7 @@ Todos parten de `X_tr`, `y_tr` y `CV` (5 folds estratificados) del Setup. Si un 
 
 **4 · Caza de la filtración.** La evaluación de un compañero trae un resultado demasiado bueno y hay que averiguar por qué: encontrar el paso que deja entrar información de la validación, corregirlo y ver cuánto vale de verdad.
 
-Cada ejercicio trae su celda de **verificación automática** (debe imprimir todos los ✓) y una **solución propuesta** plegada. Ábranla después de intentarlo, no antes. La verificación del extra 3.3 imprime `⊘` si no lo hicieron, y no cuenta como falla.
+Cada ejercicio trae su celda de **verificación automática** (debe imprimir todos los ✓). A diferencia de los labs anteriores, este notebook **no trae las soluciones**: se revisan en clase al cierre de cada bloque, y la guía tiene la referencia técnica de cada paso. La verificación del extra 3.3 imprime `⊘` si no lo hicieron, y no cuenta como falla.
 
 ## Parte de proyecto (11:35)
 

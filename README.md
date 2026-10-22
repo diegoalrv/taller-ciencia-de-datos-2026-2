@@ -23,7 +23,7 @@ jupyter lab
 
 ## Cómo trabajar
 
-Cada laboratorio trae un enunciado (qué hay que lograr y en qué tiempos), un notebook con celdas **✏️ TU TURNO** y su verificación automática, y una guía de referencia técnica. Las soluciones vienen plegadas en el notebook: ábranlas después de intentarlo.
+Cada laboratorio trae un enunciado (qué hay que lograr y en qué tiempos), un notebook con celdas **✏️ TU TURNO** y su verificación automática, y una guía de referencia técnica. En los Labs 02 a 08 las soluciones vienen plegadas en el notebook: ábranlas después de intentarlo. Desde el Lab 11 el notebook no trae las soluciones: se revisan en clase.
 
 Trabajen sobre una copia del notebook para no chocar con el `git pull` de la clase siguiente:
 
