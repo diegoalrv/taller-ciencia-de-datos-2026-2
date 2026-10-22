@@ -19,6 +19,7 @@ jupyter lab
 | 5 | 03-sep | Integración de fuentes y creación de características | [enunciado](05/lab05-integracion-features.md) · [notebook](05/lab05-integracion-features.ipynb) · [guía](05/lab05-guia-integracion-features.md) |
 | 7 | 24-sep | Análisis exploratorio de datos (EDA) | [enunciado](07/lab07-eda.md) · [notebook](07/lab07-eda.ipynb) · [guía](07/lab07-guia-eda.md) |
 | 8 | 01-oct | Visualización avanzada y dashboards | [enunciado](08/lab08-visualizacion-dashboards.md) · [notebook](08/lab08-visualizacion-dashboards.ipynb) · [guía](08/lab08-guia-visualizacion.md) · [app Streamlit (opcional)](08/lab08-app-streamlit.py) |
+| 11 | 22-oct | Evaluación de modelos | [enunciado](11/lab11-evaluacion-modelos.md) · [notebook](11/lab11-evaluacion-modelos.ipynb) · [guía](11/lab11-guia-evaluacion.md) |
 
 ## Cómo trabajar
 
