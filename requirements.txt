@@ -10,3 +10,4 @@ jupyter
 seaborn>=0.13
 plotly>=5.18
 streamlit>=1.30
+pytest>=7          # Lab 13 (Ejercicio 2 funciona sin él)
