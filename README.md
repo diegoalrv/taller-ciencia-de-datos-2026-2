@@ -21,6 +21,7 @@ jupyter lab
 | 8 | 01-oct | Visualización avanzada y dashboards | [enunciado](08/lab08-visualizacion-dashboards.md) · [notebook](08/lab08-visualizacion-dashboards.ipynb) · [guía](08/lab08-guia-visualizacion.md) · [app Streamlit (opcional)](08/lab08-app-streamlit.py) |
 | 11 | 22-oct | Evaluación de modelos | [enunciado](11/lab11-evaluacion-modelos.md) · [notebook](11/lab11-evaluacion-modelos.ipynb) · [guía](11/lab11-guia-evaluacion.md) |
 | 13 | 05-nov | Proyecto ejecutable y responsable: scripts, pruebas, privacidad y sesgo | [enunciado](13/lab13-proyecto-ejecutable-y-responsable.md) · [notebook](13/lab13-proyecto-ejecutable-y-responsable.ipynb) · [guía](13/lab13-guia-proyecto-ejecutable-y-responsable.md) |
+| 14 | 12-nov | Comunicar resultados: resumen ejecutivo, figuras, tablas y pitch | [enunciado](14/lab14-comunicar-resultados.md) · [notebook](14/lab14-comunicar-resultados.ipynb) · [guía](14/lab14-guia-comunicar-resultados.md) |
 
 ## Cómo trabajar
 
