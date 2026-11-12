@@ -7,6 +7,8 @@ Notebook: [`lab14-comunicar-resultados.ipynb`](lab14-comunicar-resultados.ipynb)
 
 Pasar de "tengo resultados" a "el lector entiende qué hacer con ellos". Tres preguntas: **¿qué digo primero?** (el resumen ejecutivo: el hallazgo con una cifra comparada y traducida, antes que el método), **¿qué muestro?** (figuras con título-mensaje, sin ejes que engañen, con la incertidumbre y la comparación a la vista; tablas que se copian al informe sin editarlas) y **¿cómo lo digo en voz alta?** (un *pitch* de 3 minutos para una audiencia no técnica). Es la base del **resumen ejecutivo, las figuras y la tabla de resultados del Informe 5** y de la **exposición final**.
 
+**El lab es demostrativo.** El código de las figuras y de la tabla viene escrito: el objetivo no es armarlo, sino leerlo, ejecutarlo y **reutilizarlo en su proyecto**. Lo que completan ustedes es la parte de comunicar: el mensaje de cada figura, la nota al pie, el resumen, la frase técnica y las decisiones. Cada ejercicio cierra con un recuadro *Para su proyecto*.
+
 ## Antes de empezar
 
 ```bash
@@ -35,11 +37,11 @@ Abran el notebook y ejecuten las celdas de *Setup*, de generación de datos y de
 
 ## Ejercicios
 
-**1 · Reescribir un resumen ejecutivo.** Un equipo ficticio resumió su trabajo así: "se usaron diversas técnicas… se obtuvieron buenos resultados, con un PR-AUC de 0,35". Todo es cierto y nadie puede decidir nada con eso. Lo reescriben en cinco partes (pregunta, hallazgo, qué significa, qué se recomienda, qué limita), sin jerga y con una cifra comparada, y escriben además **una** frase para el lector técnico con la regla completa: cifra ± incertidumbre, comparación y origen.
+**1 · Reescribir un resumen ejecutivo.** Un equipo ficticio resumió su trabajo así: "se usaron diversas técnicas… se obtuvieron buenos resultados, con un PR-AUC de 0,35". Todo es cierto y nadie puede decidir nada con eso. Las cifras del test vienen calculadas (y cada una con su origen); lo reescriben en cinco partes (pregunta, hallazgo, qué significa, qué se recomienda, qué limita), sin jerga y con una cifra comparada, y escriben además **una** frase para el lector técnico con la regla completa: cifra ± incertidumbre, comparación y origen.
 
-**2 · Arreglar tres figuras engañosas.** Tres figuras del mismo borrador, cada una con un problema distinto. Las rehacen con Matplotlib aplicando el checklist (título = mensaje, una idea por figura, destacar lo importante, fuente y *n* al pie, incertidumbre y comparación a la vista). La verificación revisa la figura misma, no solo el archivo.
+**2 · Arreglar tres figuras engañosas.** Tres figuras del mismo borrador, cada una con un problema distinto. El código corregido viene hecho y comentado (eje desde 0, una serie en color y el resto en gris, barras de error y línea de referencia); ustedes escriben el **título-mensaje**, eligen **qué destacar** y la **nota con fuente y *n***. La verificación revisa la figura misma, no solo el archivo. Esos tres bloques son los que copian para su figura principal.
 
-**3 · Tabla de resultados lista para el informe.** De la tabla copiada de la consola a una tabla que se pega en el informe sin tocarla: media ± desviación, orden con sentido, la mejor opción resaltada, nota al pie, exportada a `reports/`. Y una decisión que hay que saber escribir: ¿hay un ganador o un empate práctico? **Extra 3.3 (opcional):** una página de resumen de una pantalla (todos) y, si tienen `plotly`, su versión HTML autocontenida con un filtro. **El dashboard es opcional en este curso**: una buena página de resumen vale lo mismo.
+**3 · Tabla de resultados lista para el informe.** De la tabla copiada de la consola a una tabla que se pega en el informe sin tocarla: media ± desviación, orden con sentido, la mejor opción resaltada, exportada a `reports/` (el código viene hecho; `df_a_markdown` se lo llevan a su proyecto). Ustedes escriben la **nota al pie** y la decisión que hay que saber redactar: ¿hay un ganador o un empate práctico? **Extra 3.3 (opcional, demostración):** una página de resumen de una pantalla y, si tienen `plotly`, su versión HTML autocontenida con un filtro. **El dashboard es opcional en este curso**: una buena página de resumen vale lo mismo.
 
 ## Proyecto (40 min)
 
